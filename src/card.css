@@ -1,23 +1,23 @@
+body{
+    overflow-x: hidden;
+}
 .card {
   position: relative;
   width: 300px;
   background: linear-gradient(145deg, #fff2e6, #ffd3a6);
   border-radius: 20px;
-  overflow: hidden;
   padding: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(234, 147, 7, 0.29);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: auto;
-}
-.card:hover {
+  &&:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25); 
+  box-shadow: 0 18px 50px rgba(240, 83, 4, 0.723); 
 }
-
+}
 .cover-wrap {
   position: relative;
   border-radius: 16px;
-  overflow: hidden;
   height: 300px;
   margin-bottom: 14px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -27,12 +27,6 @@
   width:100%;
   height:100%;
   object-position: bottom;
-}
-
-.cover-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(255,200,150,0.4), transparent 50%);
 }
 
 .heart-btn {
@@ -47,46 +41,57 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   color: #ff4d6d;
   transition: all 0.2s ease;
-  font-size: 16px;
-}
-.heart-btn:hover { 
+&&:hover { 
   color: #ff2e4a; 
   background: rgba(255,77,109,0.2); 
 }
-.heart-btn.liked { 
-  color: #ff2e4a; 
-  background: rgba(255,77,109,0.2); 
-  border-color: rgba(255,77,109,0.3); 
 }
-
-.card-content { color: #3e1f0d; }
-.tag {
-  display: inline-block;
+.card-content { 
+  color: #3e1f0d;
+span{
   font-size: 11px;
   color: #ff7f50;
   font-family: 'Courier New', monospace;
   text-transform: uppercase;
-  margin-bottom: 4px;
 }
-
-.song-title {
+span,h2,.artist{
+    margin-bottom: 4px;
+}
+h2{
   font-size: 20px;
   font-weight: bold;
-  margin: 0 0 2px;
   color: #ff4d00;
 }
-
 .artist {
-  font-size: 13px;
   color: rgba(62,31,13,0.8);
   margin: 0 0 4px;
 }
-
 .duration {
   font-size: 11px;
   color: rgba(62,31,13,0.6);
   font-family: 'Courier New', monospace;
+}
+ }
+.play-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ef4c01;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.card:hover .play-btn {
+  opacity: 1;
 }

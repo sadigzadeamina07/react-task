@@ -11,15 +11,15 @@ const data = [
   },
   {
     id: 2,
-    title: "Levitating",
-    artist: "Dua Lipa",
-    duration: "3:23",
-    cover: "../public/assets/img/2.jpeg"
+ title: "Hello",
+  artist: "Adele",
+      duration: "3:23",
+    cover: "../public/assets/img/2.png"
   },
   {
     id: 3,
-    title: "Shape of You",
-    artist: "Ed Sheeran",
+  title: "Here Comes The Sun",
+  artist: "The Beatles",
     duration: "4:02",
     cover: "../public/assets/img/3.jpg"
   },
@@ -70,7 +70,6 @@ createRoot(document.getElementById('root')).render(
       padding: "20px"
 
     }}>
-    <h1 style={{ 'font-size': '60px'  , color:'orange'}}>Music</h1>
     <div style={{display:'flex' ,gap:'30px ', flexWrap:'wrap'}} >
         {data.map((item)=> <Card  key={item.id} song={item} /> )}
     </div>
