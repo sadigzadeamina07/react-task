@@ -7,7 +7,7 @@ const data = [
     title: "Blinding Lights",
     artist: "The Weeknd",
     duration: "3:20",
-    cover: "/public/assets/img/1.jpeg"
+    cover: "/assets/img/1.jpeg"
   },
   {
     id: 2,
