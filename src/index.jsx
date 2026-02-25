@@ -14,49 +14,49 @@ const data = [
  title: "Hello",
   artist: "Adele",
       duration: "3:23",
-    cover: "../public/assets/img/2.png"
+    cover: "/assets/img/2.png"
   },
   {
     id: 3,
   title: "Here Comes The Sun",
   artist: "The Beatles",
     duration: "4:02",
-    cover: "../public/assets/img/3.jpg"
+    cover: "/assets/img/3.jpg"
   },
   {
     id: 4,
     title: "Starboy",
     artist: "The Weeknd",
     duration: "3:50",
-    cover: "../public/assets/img/4.png"
+    cover: "/assets/img/4.png"
   },
   {
     id: 5,
     title: "Peaches",
     artist: "Justin Bieber",
     duration: "3:18",
-    cover: "../public/assets/img/5.jpeg"
+    cover: "/assets/img/5.jpeg"
   },
   {
     id: 6,
     title: "Bad Guy",
     artist: "Billie Eilish",
     duration: "3:14",
-    cover: "../public/assets/img/6.jpeg"
+    cover: "/assets/img/6.jpeg"
   },
   {
     id: 7,
     title: "As It Was",
     artist: "Harry Styles",
     duration: "2:47",
-    cover: "../public/assets/img/7.jpg"
+    cover: "/assets/img/7.jpg"
   },
   {
     id: 8,
     title: "Stay",
     artist: "The Kid LAROI & Justin Bieber",
     duration: "2:21",
-    cover: "../public/assets/img/8.jpeg"
+    cover: "/assets/img/8.jpeg"
   }
 ];
 
