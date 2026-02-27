@@ -11,15 +11,15 @@ const data = [
   },
   {
     id: 2,
- title: "Hello",
-  artist: "Adele",
-      duration: "3:23",
+    title: "Hello",
+    artist: "Adele",
+    duration: "3:23",
     cover: "/assets/img/2.png"
   },
   {
     id: 3,
-  title: "Here Comes The Sun",
-  artist: "The Beatles",
+    title: "Here Comes The Sun",
+    artist: "The Beatles",
     duration: "4:02",
     cover: "/assets/img/3.jpg"
   },
@@ -61,18 +61,18 @@ const data = [
 ];
 
 createRoot(document.getElementById('root')).render(
-    <div style={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      gap: "20px",
-      padding: "20px"
+  <div style={{
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "20px",
+    padding: "20px"
 
-    }}>
-    <div style={{display:'flex' ,gap:'30px ', flexWrap:'wrap'}} >
-        {data.map((item)=> <Card  key={item.id} song={item} /> )}
+  }}>
+    <div style={{ display: 'flex', gap: '30px ', flexWrap: 'wrap' }} >
+      {data.map((item) => <Card key={item.id} song={item} />)}
     </div>
-    </div>
+  </div>
 
 )
